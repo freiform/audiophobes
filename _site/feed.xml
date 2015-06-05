@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Audiophobes</title>
+    <description>Audiophobia as Art</description>
+    <link>http://audiophobes.net/</link>
+    <atom:link href="http://audiophobes.net/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Fri, 05 Jun 2015 09:07:47 +0200</pubDate>
+    <lastBuildDate>Fri, 05 Jun 2015 09:07:47 +0200</lastBuildDate>
+    <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Hello, world!</title>
+        <description>&lt;p&gt;Hello, World!&lt;/p&gt;
+
+&lt;p&gt;I don’t know what I’m doing yet&lt;/p&gt;
+</description>
+        <pubDate>Thu, 04 Jun 2015 00:00:00 +0200</pubDate>
+        <link>http://audiophobes.net/2015/06/04/hello-world/</link>
+        <guid isPermaLink="true">http://audiophobes.net/2015/06/04/hello-world/</guid>
+        
+        <category>initial release</category>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
