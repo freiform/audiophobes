@@ -1,7 +1,7 @@
 ---
 
 layout : post
-title : Hello, world!
+title : Atoms are supposed to be good for you!
 
 ---
 
