@@ -1,12 +1,9 @@
 # Site settings
 title: Audiophobes
-# email: audiophobia@audiophobes.net
 description: "Audiophobia as Art"
-baseurl: "http://audiophobes.net"
+baseurl: ""
 url: "http://audiophobes.net"
 twitter_username: audiophobes
-# github_username:  bastibe
 
 # Build settings
-# markdown: kramdown
 permalink: pretty
