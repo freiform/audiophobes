@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Meta post: Jekyll, sorting, YAML and colons"
-date: 2015-07-01T10:10+01:00
+date: 2015-07-01 10:10
 ---
 
 If you plan to use a colon followed by a space in the title tag of a YAML front matter block, put said title in quotes.
