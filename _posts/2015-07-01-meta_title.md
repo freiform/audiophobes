@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Super Mario: Unreal"
-date: 2015-06-30 14:26
+title: "Meta post: Jekyll, sorting, YAML and colons"
+date: 2015-07-01T10:10+01:00
 ---
 
-Shiny!
+If you plan to use a colon followed by a space in the title tag of a YAML front matter block, put said title in quotes.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VUKcSiAPJoQ" frameborder="0" allowfullscreen></iframe>
+If you fail to do so, the parser will not work on following tags. If you happen to specify a date after the title, it will be omitted and taken from the file name of the post instead. The posts for one day will then be sorted alphabetically  which might mess up your post order.
