@@ -2,7 +2,7 @@
 
 layout: post
 title: "VMWare: Expand Disk needs space"
-date: 2015-07-03 10:12
+date: 2015-07-16 14:00
 
 ---
 
