@@ -11,8 +11,8 @@ There is no boxplot in Matlab but a bunch of assorted lines and symbols. And you
     red  = [198 0 0]./255;
     blue = [0 123 198]./255;
 
-    set(findobj(gcf,'tag','Median'),    'Color', blue);
-    set(findobj(gcf,'tag','Box'),       'Color', red);
+    set(findobj(gcf,'tag','Median'), 'Color', blue);
+    set(findobj(gcf,'tag','Box'), 'Color', red);
 
     h = findobj(gcf,'tag','Outliers');
     for iH = 1:length(h)
