@@ -7,3 +7,6 @@ twitter_username: audiophobes
 
 # Build settings
 permalink: pretty
+
+gems:
+  - jekyll-feed
