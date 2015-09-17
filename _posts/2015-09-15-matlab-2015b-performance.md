@@ -21,3 +21,5 @@ But there's more to this than meets the eye. A nice person named Andrew Janke wr
 <img src="assets/2015-09-15-matlab-microbenchmark.png" width="100%" alt="Matlab Microbenchmark" />
 
 And this is actually rather interesting! As you can see, most things actually got faster. Function calls got a speed boost of about 4x. And most importantly, anything class related now operates at a speed similar to plain functions! Only the dynamic stuff got a bit slower, such as `feval`, Java interop, and anonymous functions. This is likely outweighed by the speedups in other areas, though.
+
+More on Matlab and OOP performance in Matlab [here](http://stackoverflow.com/questions/1693429/is-matlab-oop-slow-or-am-i-doing-something-wrong/1745686#1745686) and more on the rationale behind Matlab's object system [here](http://de.mathworks.com/company/newsletters/articles/inside-matlab-objects-in-r2008a.html).
