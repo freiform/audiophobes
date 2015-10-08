@@ -12,13 +12,13 @@ Let's put this to a test! The last big change in stuff was the transition from 2
 
 The first six items are the output of Matlab 2014a's own `bench` utility (they conveniently changed `bench` in 2014b, presumably to hide the stark contrast between 2014a and 2014b). The last two items are applications we use for our jobs here.
 
-<img src="assets/2015-09-15-matlab-benchmark.png" width="100%" alt="Matlab Benchmark" />
+<img src="/assets/2015-09-15-matlab-benchmark.png" width="100%" alt="Matlab Benchmark" />
 
 As you can see, application performance got significantly worse in 2014b, rebounded in 2015a, but in general declined slightly over time. If there is a big boost in performance in 2015b, it is not showing in these benchmarks.
 
 But there's more to this than meets the eye. A nice person named Andrew Janke wrote a beautiful [microbenchmark for Matlab](https://github.com/apjanke/matlab-bench) that evaluates the performance of things like function calls and class creation:
 
-<img src="assets/2015-09-15-matlab-microbenchmark.png" width="100%" alt="Matlab Microbenchmark" />
+<img src="/assets/2015-09-15-matlab-microbenchmark.png" width="100%" alt="Matlab Microbenchmark" />
 
 And this is actually rather interesting! As you can see, most things actually got faster. Function calls got a speed boost of about 4x. And most importantly, anything class related now operates at a speed similar to plain functions! Only the dynamic stuff got a bit slower, such as `feval`, Java interop, and anonymous functions. This is likely outweighed by the speedups in other areas, though.
 
