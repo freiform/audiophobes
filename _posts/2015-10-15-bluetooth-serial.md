@@ -7,7 +7,7 @@ date: 2015-10-15 13:45
 ---
 
 I've been trying for quite some time to access a Bluetooth device using a virtual serial port. While blueman (Xubuntu 15.04)
-worked out of the box, bluedevil (Kubuntu 15.04) never managed to establish a connection. After some fiddling around with bluez, I had access to the device in question via `/dev/rfcomm0`, but unfortunately only as superuser. All attempts to access the device as user were met with messaged about busy devices or permission issues. Looking at the permissions in question, everything seemed fine, including my user's intimate affiliation with the `dialup`-group . After some searching and fiddling, one of the following steps (or any combination including #3) apparently did the trick:
+worked out of the box, bluedevil (Kubuntu 15.04) never managed to establish a connection. After some fiddling around with bluez, I had access to the device in question via `/dev/rfcomm0`, but unfortunately only as superuser. All attempts to access the device as user were met with messaged about busy devices or permission issues. Looking at the permissions in question, everything seemed fine, including my user's intimate affiliation with the `dialup`-group . After some searching and fiddling, one of the following steps (or any combination including Number 3) apparently did the trick:
 
 1. edit `/etc/bluetooth/rfcomm.conf` to look something like this:
 
@@ -46,7 +46,6 @@ On a related note, you might want to allow the user(s) in question to run rfcomm
     sudo chmod u+s /usr/bin/rfcomm
 
 Thanks to all the unsung heroes and the information buried in the bowels of their respective forums, repos and weblogs:
-
 
 [1] http://pi19404.github.io/pyVision/2015/04/03/22/
 
