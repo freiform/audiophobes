@@ -12,7 +12,7 @@ worked out of the box, bluedevil (Kubuntu 15.04) never managed to establish a co
 1. edit `/etc/bluetooth/rfcomm.conf` to look something like this:
 
 
-    rfcomm0 {
+      rfcomm0 {
         # Automatically bind the device at startup
         bind yes;
 
@@ -24,22 +24,22 @@ worked out of the box, bluedevil (Kubuntu 15.04) never managed to establish a co
 
         # Description of the connection
         comment "my wicked bt-device";
-    }
+      }
 
 2. create a file named `pincodes` in `/var/lib/bluetooth/<your_hopefully_less_wicked_bt-adapter's-address>/`, containing your wicked bt-device's address and PIN:
 
 
-    AB:CD:EF:01:23:45 1234
+      AB:CD:EF:01:23:45 1234
 
 3. create a new udev-rule, e.g. in `/etc/udev/rules.d/40-rfcomm.rules`:
 
 
-    KERNEL=="rfcomm*", GROUP="dialout", MODE="0666"
+      KERNEL=="rfcomm*", GROUP="dialout", MODE="0666"
 
 All other things being equal, calling
 
 
-    rfcomm bind 1
+      rfcomm bind 1
 
 and then accessing `/dev/rfcomm0` with a terminal of your choice, should do the trick.
 
