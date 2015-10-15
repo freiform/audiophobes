@@ -15,10 +15,13 @@ worked out of the box, bluedevil (Kubuntu 15.04) never managed to establish a co
     rfcomm0 {
         # Automatically bind the device at startup
         bind yes;
+
         # Bluetooth address of the device
         device AB:CD:EF:01:23:45;
+
         # RFCOMM channel for the connection
         channel 1;
+
         # Description of the connection
         comment "my wicked bt-device";
     }
