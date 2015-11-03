@@ -15,7 +15,7 @@ And yes, these issues are ANNOYING!!
     function [] = usound( vSignal, fs)
     %USOUND Replacement for sound() or soundsc() on Unix machines
     % -------------------------------------------------------------------------
-    % Code adapted by J. Thiemann on
+    % Adapted from J. Thiemann's code on his blog
     % http://signalsprocessed.blogspot.de/2011/02/playing-sounds-from-matlab-on-unix.html
     %
     % Usage: [] = usound( vSignal, fs)
