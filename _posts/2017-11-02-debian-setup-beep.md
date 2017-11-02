@@ -1,7 +1,7 @@
 ---
 
 layout : post
-title : Setting up Debian: Hardware Beep
+title : Setting up Debian - Hardware Beep
 date: 2017-11-02 14:47
 
 ---
