@@ -8,6 +8,4 @@ date: 2017-11-18 19:10
 
 [A quick Geekbench to compare my old PC to my new notebook](https://browser.geekbench.com/v4/cpu/compare/4917278?baseline=4917520). 
 
-<img alt="Geekbench results" width="600" src="{{ site.url }}/assets/2017-11-18-geekbench.png">
-
 Interesting. But I guess i have to find a more demanding test to see how the 8250U handles the heast dissipation of a small laptop. 
